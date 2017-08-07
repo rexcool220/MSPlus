@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('css/admin.css') }}">
     <link rel="stylesheet" href="{{ asset('css/timeline.css') }}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.7/css/jquery.dataTables.min.css">
 
     <!-- Scripts -->
     <script>
@@ -19,6 +21,7 @@
         ]); ?>
     </script>
 
+
 </head>
 <body>
 @yield('body')
@@ -26,5 +29,9 @@
 <script src="{{ asset("js/app.js") }}"></script>
 <script src="{{ asset("js/Chart.js") }}"></script>
 <script src="{{ asset("js/admin.js") }}"></script>
+<script src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+
+<!-- App scripts -->
+@stack('scripts')
 </body>
 </html>

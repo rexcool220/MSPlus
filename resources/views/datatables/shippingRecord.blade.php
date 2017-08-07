@@ -1,8 +1,8 @@
 @section('page_heading','訂單管理')
 
-@extends('admin.layouts.datatable')
+@extends('admin.layouts.dashboard')
 
-@section('content')
+@section('section')
     <table class="table table-bordered" id="shippingRecordTable">
         <thead>
         <tr>
@@ -20,6 +20,7 @@
             <th>月份</th>
             <th>規格</th>
             <th>ItemID</th>
+            <th></th>
         </tr>
         </thead>
     </table>
@@ -46,7 +47,8 @@
                 { data: '備註', name: '備註' },
                 { data: '月份', name: '月份' },
                 { data: '規格', name: '規格' },
-                { data: 'ItemID', name: 'ItemID' }
+                { data: 'ItemID', name: 'ItemID' },
+                { data: 'action', name: 'action' }
             ]
         });
     });
