@@ -75,6 +75,11 @@ Route::get('/collapse', function() {
     return View::make('admin.collapse');
 });
 
-Route::get('/shippingRecord','DatatablesController@getShippingRecord');
+Route::get('/shippingRecord', 'DatatablesController@getShippingRecord');
 
-Route::get('/shippingRecordData','DatatablesController@shippingRecordData')->name('datatables.shippingRecord');
+Route::get('/shippingRecordData', 'DatatablesController@shippingRecordData')->name('datatables.shippingRecord');
+
+Route::delete('/shippingRecord/{id}', [
+    'as' => 'deleteShippingRecord',
+    'uses' => 'AjaxController@deleteShippingRecord'
+]);

@@ -51,6 +51,25 @@
                 { data: 'action', name: 'action' }
             ]
         });
+        $('#shippingRecordTable').DataTable().on('click', '.btn-delete[data-remote]', function (e) {
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+            var url = $(this).data('remote');
+            $.ajax({
+                url: url,
+                type: 'DELETE',
+                dataType: 'json',
+                data: {method: '_DELETE', submit: true}
+            }).always(function (data) {
+                $('#shippingRecordTable').DataTable().draw(false);
+                alert(data.msg);
+            });
+        });
+
     });
+
 </script>
 @endpush
