@@ -20,10 +20,32 @@
             <th>月份</th>
             <th>規格</th>
             <th>ItemID</th>
-            <th></th>
+            <th>修改</th>
+            <th>刪除</th>
         </tr>
         </thead>
     </table>
+    <div id="shippingRecordModal" class="modal fade" aria-labelledby="shippingRecordModalLabel" aria-hidden="true" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">新增修改</h4>
+                </div>
+                <div class="modal-body" id="shippingRecordModalBody">
+                    <form id="shippingRecordForm" role="form" >
+                        <div class="form-group">
+                            <label for="FBAccount">FBAccount</label>
+                            <input type="text" name="FBAccount" id="FBAccount" class="form-control"/>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" id="submit" class="btn btn-success">確定</button>
+                </div>
+            </div>
+        </div>
+    </div>
 @stop
 
 @push('scripts')
@@ -48,8 +70,15 @@
                 { data: '月份', name: '月份' },
                 { data: '規格', name: '規格' },
                 { data: 'ItemID', name: 'ItemID' },
-                { data: 'action', name: 'action' }
+                { data: 'edit', name: 'edit' },
+                { data: 'delete', name: 'delete' }
             ]
+        });
+        $('#shippingRecordTable').DataTable().on('click', '.btn-edit[data-remote]', function (e) {
+//            var url = $(this).data('remote');
+//            alert(url);
+
+//            $('#shippingRecordModal').modal('show');
         });
         $('#shippingRecordTable').DataTable().on('click', '.btn-delete[data-remote]', function (e) {
             $.ajaxSetup({

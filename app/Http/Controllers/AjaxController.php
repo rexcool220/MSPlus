@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 
 class AjaxController extends Controller
 {
-    public function deleteShippingRecord($Id)
+    public function deleteShippingRecord($serialNumber)
     {
-        $msg = $Id;
+        $msg = $serialNumber;
         return response()->json(array('msg'=> $msg), 200);
     }
 }
