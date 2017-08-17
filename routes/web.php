@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('admin.home');
-});
+Route::get('/', 'ChartsController@ChartData');
 
 Route::get('/admin', function () {
     return view('admin.home');
@@ -64,7 +62,7 @@ Route::get('/documentation', function () {
 });
 
 Route::get('/stats', function() {
-   return View::make('admin.stats');
+    return View::make('admin.stats');
 });
 
 Route::get('/progressbars', function() {
@@ -83,3 +81,5 @@ Route::delete('/shippingRecord/{id}', [
     'as' => 'deleteShippingRecord',
     'uses' => 'AjaxController@deleteShippingRecord'
 ]);
+
+Route::post('/register','AjaxController@editShippingRecord');
