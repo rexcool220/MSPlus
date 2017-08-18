@@ -7,11 +7,14 @@
             </div>
             <div class="modal-body" id="shippingRecordModalBody">
                 <form id="shippingRecordForm" role="form" >
+                    <div class="row">
+                        <div class="col-md-2 col-md-offset-10"><button type="button" value="editShippingRecord" id="submit" class="btn btn-success">確定</button></div>
+                    </div>
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                     <div class="form-group">
                         <label for="FB帳號">FB帳號</label>
-                        <input type="text" name="FB帳號" id="FB帳號" class="form-control"/>
+                        <input type="text" name="FB帳號" id="FB帳號" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label for="品項">品項</label>
@@ -35,7 +38,7 @@
                     </div>
                     <div class="form-group">
                         <label for="SerialNumber">SerialNumber</label>
-                        <input type="text" name="SerialNumber" id="SerialNumber" class="form-control"/>
+                        <input type="text" name="SerialNumber" id="SerialNumber" class="form-control" readonly/>
                     </div>
                     <div class="form-group">
                         <label for="匯款編號">匯款編號</label>
@@ -65,7 +68,6 @@
                         <label for="ItemID">ItemID</label>
                         <input type="text" name="ItemID" id="ItemID" class="form-control"/>
                     </div>
-                    <button type="button" value="Register" id="submit" class="btn btn-success">確定</button>
                 </form>
             </div>
         </div>

@@ -82,4 +82,4 @@ Route::delete('/shippingRecord/{id}', [
     'uses' => 'AjaxController@deleteShippingRecord'
 ]);
 
-Route::post('/register','AjaxController@editShippingRecord');
+Route::post('/editShippingRecord','AjaxController@editShippingRecord');

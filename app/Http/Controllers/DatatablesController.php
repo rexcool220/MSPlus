@@ -45,7 +45,7 @@ class DatatablesController extends Controller
                     'ItemID' => $shippingRecord->ItemID
                 );
 
-                return '<button class="btn-edit btn-warning" data-remote=\''. json_encode($shippingRecordArray) .'\'>Edit</button>';
+                return '<button class="btn-edit btn-warning" data-remote=\''. htmlspecialchars(json_encode($shippingRecordArray), ENT_QUOTES, 'UTF-8') .'\'>Edit</button>';
             })
             ->addColumn('delete', function ($shippingRecord) {
                 return '<button class="btn-delete btn-danger" data-remote="/shippingRecord/'. $shippingRecord->SerialNumber .'">Delete</button>';

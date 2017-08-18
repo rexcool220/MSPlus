@@ -3,7 +3,7 @@
 @extends('admin.layouts.dashboard')
 
 @section('section')
-    <button type="button" class="btn btn-primary">New</button>
+    <button type="button" id="new" class="btn btn-primary">New</button>
     <table class="table table-bordered" id="shippingRecordTable">
         <thead>
         <tr>
@@ -79,16 +79,19 @@
             $('#shippingRecordModal').modal('show');
         });
         $('#shippingRecordTable').DataTable().on('click', '.btn-delete[data-remote]', function (e) {
-            var url = $(this).data('remote');
-            $.ajax({
-                url: url,
-                type: 'DELETE',
-                dataType: 'json',
-                data: {method: '_DELETE', submit: true}
-            }).always(function (data) {
-                $('#shippingRecordTable').DataTable().draw(false);
-                alert(data.msg);
-            });
+            if (confirm('確認刪除？')) {
+                var url = $(this).data('remote');
+                $.ajax({
+                    url: url,
+                    type: 'DELETE',
+                    dataType: 'json',
+                    data: {method: '_DELETE', submit: true},
+                    success: function (data) {
+                        $('#shippingRecordTable').DataTable().draw(true);
+                        alert("刪除完成");
+                    }
+                });
+            }
         });
     });
     $('#submit').click(function () {
@@ -96,13 +99,19 @@
         var form=$("#shippingRecordForm");
         $.ajax({
             type: 'POST',
-            url: 'register',
+            url: 'editShippingRecord',
             data: form.serialize(),
             success: function(data){
+                $('#shippingRecordTable').DataTable().draw(true);
                 alert(data);
             }
         });
         $('#shippingRecordModal').modal('hide');
+    });
+
+    $('#new').click(function () {
+        $('#shippingRecordForm').trigger("reset");
+        $('#shippingRecordModal').modal('show');
     });
 </script>
 @endpush
