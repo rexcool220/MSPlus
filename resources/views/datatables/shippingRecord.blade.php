@@ -70,7 +70,7 @@
             $('#出貨日期').val(shippingRecordJson.出貨日期);
             $('#SerialNumber').val(shippingRecordJson.SerialNumber);
             $('#匯款編號').val(shippingRecordJson.匯款編號);
-            $('#確認收款').val(shippingRecordJson.確認收款);
+            $('#確認收款').prop('checked', shippingRecordJson.確認收款);
             $('#FBID').val(shippingRecordJson.FBID);
             $('#備註').val(shippingRecordJson.備註);
             $('#月份').val(shippingRecordJson.月份);
@@ -96,17 +96,32 @@
     });
     $('#submit').click(function () {
         var FBID = $('#FBID').val();
-        var form=$("#shippingRecordForm");
+        var form = $("#shippingRecordForm");
         $.ajax({
             type: 'POST',
             url: 'editShippingRecord',
             data: form.serialize(),
-            success: function(data){
+            success: function (data) {
                 $('#shippingRecordTable').DataTable().draw(true);
                 alert(data);
+                $('#shippingRecordModal').modal('hide');
+            },
+            error: function (x, e) {
+                if (x.status == 0) {
+                    alert('You are offline!!\n Please Check Your Network.');
+                } else if (x.status == 404) {
+                    alert('Requested URL not found.');
+                } else if (x.status == 500) {
+                    alert('Internel Server Error.');
+                } else if (e == 'parsererror') {
+                    alert('Error.\nParsing JSON Request failed.');
+                } else if (e == 'timeout') {
+                    alert('Request Time out.');
+                } else {
+                    alert('Unknow Error.\n' + x.responseText);
+                }
             }
-        });
-        $('#shippingRecordModal').modal('hide');
+        })
     });
 
     $('#new').click(function () {

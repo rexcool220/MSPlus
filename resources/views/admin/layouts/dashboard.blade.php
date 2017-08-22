@@ -258,6 +258,14 @@
                             <a href="{{ url ('shippingRecord') }}"><i class="fa fa-shopping-cart fa-fw"></i> 訂單管理</a>
                             <!-- /.nav-second-level -->
                         </li>
+                        <li {{ (Request::is('*charts') ? 'class="active"' : '') }}>
+                            <a href="{{ url ('members') }}"><i class="fa fa-user fa-fw"></i> 會員管理</a>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li {{ (Request::is('*charts') ? 'class="active"' : '') }}>
+                            <a href="{{ url ('itemCategory') }}"><i class="fa fa-download fa-fw"></i> 到貨管理</a>
+                            <!-- /.nav-second-level -->
+                        </li>
                         <li {{ (Request::is('*tables') ? 'class="active"' : '') }}>
                             <a href="{{ url ('tables') }}"><i class="fa fa-table fa-fw"></i> Tables</a>
                         </li>

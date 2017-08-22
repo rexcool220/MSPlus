@@ -83,3 +83,14 @@ Route::delete('/shippingRecord/{id}', [
 ]);
 
 Route::post('/editShippingRecord','AjaxController@editShippingRecord');
+
+Route::get('/members', 'DatatablesController@getMembers');
+
+Route::get('/membersData', 'DatatablesController@membersData')->name('datatables.members');
+
+Route::delete('/members/{id}', [
+    'as' => 'deleteMembers',
+    'uses' => 'AjaxController@deleteMembers'
+]);
+
+Route::post('/editMembers','AjaxController@editMembers');

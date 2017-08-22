@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\ShippingRecord;
 
+use App\Members;
+
 use Yajra\Datatables\Datatables;
 
 class DatatablesController extends Controller
@@ -49,6 +51,45 @@ class DatatablesController extends Controller
             })
             ->addColumn('delete', function ($shippingRecord) {
                 return '<button class="btn-delete btn-danger" data-remote="/shippingRecord/'. $shippingRecord->SerialNumber .'">Delete</button>';
+            })
+            ->rawColumns(['edit', 'delete'])
+            ->make(true);
+    }
+
+    public function getMembers()
+    {
+        return view('datatables.members');
+    }
+
+    /**
+     * Process datatables ajax request.
+     *
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function membersData()
+    {
+        $members = Members::select(['姓名', 'FB帳號', '手機號碼', '郵遞區號地址', '全家店到店服務代號', '寄送方式', '運費', '備註', 'FBID', 'Rebate', 'Type']);
+        return Datatables::of($members)
+            ->addIndexColumn()
+            ->addColumn('edit', function ($members) {
+                $membersArray = array(
+                    '姓名' => $members->姓名,
+                    'FB帳號' => $members->FB帳號,
+                    '手機號碼' => $members->手機號碼,
+                    '郵遞區號地址' => $members->郵遞區號地址,
+                    '全家店到店服務代號' => $members->全家店到店服務代號,
+                    '寄送方式' => $members->寄送方式,
+                    '運費' => $members->運費,
+                    '備註' => $members->備註,
+                    'FBID' => $members->FBID,
+                    'Rebate' => $members->Rebate,
+                    'Type' => $members->Type
+                );
+
+                return '<button class="btn-edit btn-warning" data-remote=\''. htmlspecialchars(json_encode($membersArray), ENT_QUOTES, 'UTF-8') .'\'>Edit</button>';
+            })
+            ->addColumn('delete', function ($members) {
+                return '<button class="btn-delete btn-danger" data-remote="/members/'. $members->FBID .'">Delete</button>';
             })
             ->rawColumns(['edit', 'delete'])
             ->make(true);
