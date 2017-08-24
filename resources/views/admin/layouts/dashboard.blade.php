@@ -266,6 +266,10 @@
                             <a href="{{ url ('itemCategory') }}"><i class="fa fa-download fa-fw"></i> 到貨管理</a>
                             <!-- /.nav-second-level -->
                         </li>
+                        <li {{ (Request::is('*charts') ? 'class="active"' : '') }}>
+                            <a href="{{ url ('remitRecord') }}"><i class="fa fa-money fa-fw"></i> 對帳管理</a>
+                            <!-- /.nav-second-level -->
+                        </li>
                         <li {{ (Request::is('*tables') ? 'class="active"' : '') }}>
                             <a href="{{ url ('tables') }}"><i class="fa fa-table fa-fw"></i> Tables</a>
                         </li>

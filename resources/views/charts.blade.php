@@ -1,26 +1,20 @@
-<div class="container">
-    <h2>Chart.js — Bar Chart Demo</h2>
-    <div>
-        <canvas id="myChart"></canvas>
-    </div>
-</div>
+<!doctype html>
+<html lang="en">
+<head>
+    <title>jQuery UI Datepicker - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
-        window.onload = function(){
-            var ctx = document.getElementById("myChart").getContext('2d');
-            var myChart = new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: ["M", "T", "W", "T", "F", "S", "S"],
-                    datasets: [{
-                        label: 'apples',
-                        data: [12, 19, 3, 17, 28, 24, 7],
-                        backgroundColor: "rgba(153,255,51,1)"
-                    }, {
-                        label: 'oranges',
-                        data: [30, 29, 5, 5, 20, 3, 10],
-                        backgroundColor: "rgba(255,153,0,1)"
-                    }]
-                }
-            });
-        };
+        $( function() {
+            $( "#datepicker" ).datepicker();
+        } );
     </script>
+</head>
+<body>
+
+<p>Date: <input type="text" id="datepicker"></p>
+
+
+</body>
+</html>

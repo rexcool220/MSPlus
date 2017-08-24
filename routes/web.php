@@ -94,3 +94,25 @@ Route::delete('/members/{id}', [
 ]);
 
 Route::post('/editMembers','AjaxController@editMembers');
+
+Route::get('/itemCategory', 'DatatablesController@getItemCategory');
+
+Route::get('/itemCategoryData', 'DatatablesController@itemCategoryData')->name('datatables.itemCategory');
+
+Route::delete('/itemCategory/{id}/{spec}', [
+    'as' => 'deleteItemCategory',
+    'uses' => 'AjaxController@deleteItemCategory'
+]);
+
+Route::post('/editItemCategory','AjaxController@editItemCategory');
+
+Route::get('/remitRecord', 'DatatablesController@getRemitRecord');
+
+Route::get('/remitRecordData', 'DatatablesController@remitRecordData')->name('datatables.remitRecord');
+
+Route::delete('/remitRecord/{id}', [
+    'as' => 'deleteRemitRecord',
+    'uses' => 'AjaxController@deleteRemitRecord'
+]);
+
+Route::post('/editRemitRecord','AjaxController@editRemitRecord');

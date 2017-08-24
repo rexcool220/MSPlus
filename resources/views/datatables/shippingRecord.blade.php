@@ -62,6 +62,7 @@
         });
         $('#shippingRecordTable').DataTable().on('click', '.btn-edit[data-remote]', function (e) {
             var shippingRecordJson = $(this).data('remote');
+            $('#operate').val('edit');
             $('#FB帳號').val(shippingRecordJson.FB帳號);
             $('#品項').val(shippingRecordJson.品項);
             $('#單價').val(shippingRecordJson.單價);
@@ -95,7 +96,6 @@
         });
     });
     $('#submit').click(function () {
-        var FBID = $('#FBID').val();
         var form = $("#shippingRecordForm");
         $.ajax({
             type: 'POST',
@@ -118,13 +118,14 @@
                 } else if (e == 'timeout') {
                     alert('Request Time out.');
                 } else {
-                    alert('Unknow Error.\n' + x.responseText);
+                    alert('Unknow Error.\n' + eval("'" + x.responseText + "'"));
                 }
             }
         })
     });
 
     $('#new').click(function () {
+        $('#operate').val('new');
         $('#shippingRecordForm').trigger("reset");
         $('#shippingRecordModal').modal('show');
     });

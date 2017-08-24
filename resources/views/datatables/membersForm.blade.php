@@ -7,10 +7,8 @@
             </div>
             <div class="modal-body" id="membersModalBody">
                 <form id="membersForm" role="form" >
-                    <div class="row">
-                        <div class="col-md-2 col-md-offset-10"><button type="button" value="editmembers" id="submit" class="btn btn-primary">確定</button></div>
-                    </div>
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                    <input type="hidden" name="operate" id="operate">
                     <div class="form-group">
                         <label for="姓名">姓名</label>
                         <input type="text" name="姓名" id="姓名" class="form-control"/>
@@ -28,7 +26,7 @@
                         <input type="text" name="郵遞區號地址" id="郵遞區號地址" class="form-control"/>
                     </div>
                     <div class="form-group">
-                        <label for="全家店到店服務代號">全家店到店服務代號</全家店到店服務代號></label>
+                        <label for="全家店到店服務代號">全家店到店服務代號</label>
                         <input type="text" name="全家店到店服務代號" id="全家店到店服務代號" class="form-control"/>
                     </div>
                     <div class="form-group">
@@ -54,6 +52,9 @@
                     <div class="form-group">
                         <label for="Type">Type</label>
                         <input type="text" name="Type" id="Type" class="form-control"/>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-md-offset-10"><button type="button" value="editmembers" id="submit" class="btn btn-primary">確定</button></div>
                     </div>
                 </form>
             </div>

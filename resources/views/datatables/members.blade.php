@@ -56,6 +56,7 @@
         });
         $('#membersTable').DataTable().on('click', '.btn-edit[data-remote]', function (e) {
             var membersJson = $(this).data('remote');
+            $('#operate').val('edit');
             $('#姓名').val(membersJson.姓名);
             $('#FB帳號').val(membersJson.FB帳號);
             $('#手機號碼').val(membersJson.手機號碼);
@@ -86,7 +87,6 @@
         });
     });
     $('#submit').click(function () {
-        var FBID = $('#FBID').val();
         var form = $("#membersForm");
         $.ajax({
             type: 'POST',
@@ -109,13 +109,14 @@
                 } else if (e == 'timeout') {
                     alert('Request Time out.');
                 } else {
-                    alert('Unknow Error.\n' + x.responseText);
+                    alert('Unknow Error.\n' + eval("'" + x.responseText + "'"));
                 }
             }
         })
     });
 
     $('#new').click(function () {
+        $('#operate').val('new');
         $('#membersForm').trigger("reset");
         $('#membersModal').modal('show');
     });
