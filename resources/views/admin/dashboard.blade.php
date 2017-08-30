@@ -109,14 +109,14 @@
                     data: {
                         labels:
                         <?php
-                            $monthArray = '[';
-                            foreach($revenues as $revenue)
-                            {
-                                $monthArray = $monthArray . $revenue->month . ',';
-                            }
-                            $monthArray = substr($monthArray, 0 ,-1);
-                            $monthArray = $monthArray . ']';
-                            echo $monthArray;
+                        $monthArray = '[';
+                        foreach($revenues as $revenue)
+                        {
+                            $monthArray = $monthArray . $revenue->month . ',';
+                        }
+                        $monthArray = substr($monthArray, 0 ,-1);
+                        $monthArray = $monthArray . ']';
+                        echo $monthArray;
                         ?>
                         ,
                         datasets: [{
@@ -124,17 +124,17 @@
                             data:
                             <?php
                             $revenueArray = '[';
-                                foreach($revenues as $revenue)
-                                {
-                                    $revenueArray = $revenueArray . $revenue->revenue . ',';
-                                }
+                            foreach($revenues as $revenue)
+                            {
+                                $revenueArray = $revenueArray . $revenue->revenue . ',';
+                            }
                             $revenueArray = substr($revenueArray, 0 ,-1);
                             $revenueArray = $revenueArray . ']';
-                                echo $revenueArray;
+                            echo $revenueArray;
                             ?>
                             ,
                             backgroundColor: "rgba(255,153,0,1)"
-                            },
+                        },
                             {
                                 label: '毛利',
                                 data:

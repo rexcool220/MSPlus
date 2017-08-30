@@ -11,14 +11,8 @@
 |
 */
 
-Route::get('/', 'ChartsController@ChartData');
-
-Route::get('/admin', function () {
-    return view('admin.home');
-});
-
-Route::get('/login', function () {
-    return view('admin.auth.login');
+Route::get('/', function () {
+    return View::make('admin.blank');
 });
 
 Route::get('/tables', function () {
@@ -73,46 +67,58 @@ Route::get('/collapse', function() {
     return View::make('admin.collapse');
 });
 
-Route::get('/shippingRecord', 'DatatablesController@getShippingRecord');
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/shippingRecord', 'DatatablesController@getShippingRecord');
 
-Route::get('/shippingRecordData', 'DatatablesController@shippingRecordData')->name('datatables.shippingRecord');
+    Route::get('/shippingRecordData', 'DatatablesController@shippingRecordData')->name('datatables.shippingRecord');
 
-Route::delete('/shippingRecord/{id}', [
-    'as' => 'deleteShippingRecord',
-    'uses' => 'AjaxController@deleteShippingRecord'
-]);
+    Route::delete('/shippingRecord/{id}', [
+        'as' => 'deleteShippingRecord',
+        'uses' => 'AjaxController@deleteShippingRecord'
+    ]);
 
-Route::post('/editShippingRecord','AjaxController@editShippingRecord');
+    Route::post('/editShippingRecord','AjaxController@editShippingRecord');
 
-Route::get('/members', 'DatatablesController@getMembers');
+    Route::get('/members', 'DatatablesController@getMembers');
 
-Route::get('/membersData', 'DatatablesController@membersData')->name('datatables.members');
+    Route::get('/membersData', 'DatatablesController@membersData')->name('datatables.members');
 
-Route::delete('/members/{id}', [
-    'as' => 'deleteMembers',
-    'uses' => 'AjaxController@deleteMembers'
-]);
+    Route::delete('/members/{id}', [
+        'as' => 'deleteMembers',
+        'uses' => 'AjaxController@deleteMembers'
+    ]);
 
-Route::post('/editMembers','AjaxController@editMembers');
+    Route::post('/editMembers','AjaxController@editMembers');
 
-Route::get('/itemCategory', 'DatatablesController@getItemCategory');
+    Route::get('/itemCategory', 'DatatablesController@getItemCategory');
 
-Route::get('/itemCategoryData', 'DatatablesController@itemCategoryData')->name('datatables.itemCategory');
+    Route::get('/itemCategoryData', 'DatatablesController@itemCategoryData')->name('datatables.itemCategory');
 
-Route::delete('/itemCategory/{id}/{spec}', [
-    'as' => 'deleteItemCategory',
-    'uses' => 'AjaxController@deleteItemCategory'
-]);
+    Route::delete('/itemCategory/{id}/{spec}', [
+        'as' => 'deleteItemCategory',
+        'uses' => 'AjaxController@deleteItemCategory'
+    ]);
 
-Route::post('/editItemCategory','AjaxController@editItemCategory');
+    Route::post('/editItemCategory','AjaxController@editItemCategory');
 
-Route::get('/remitRecord', 'DatatablesController@getRemitRecord');
+    Route::get('/remitRecord', 'DatatablesController@getRemitRecord');
 
-Route::get('/remitRecordData', 'DatatablesController@remitRecordData')->name('datatables.remitRecord');
+    Route::get('/remitRecordData', 'DatatablesController@remitRecordData')->name('datatables.remitRecord');
 
-Route::delete('/remitRecord/{id}', [
-    'as' => 'deleteRemitRecord',
-    'uses' => 'AjaxController@deleteRemitRecord'
-]);
+    Route::delete('/remitRecord/{id}', [
+        'as' => 'deleteRemitRecord',
+        'uses' => 'AjaxController@deleteRemitRecord'
+    ]);
 
-Route::post('/editRemitRecord','AjaxController@editRemitRecord');
+    Route::post('/editRemitRecord','AjaxController@editRemitRecord');
+
+    Route::get('/dashboard', 'ChartsController@ChartData');
+});
+
+Route::get('login', 'Auth\LoginController@redirectToProvider');
+
+Route::get('login/callback', 'Auth\LoginController@handleProviderCallback');
+
+Route::get('logout', 'LogoutController@logout');
+
+Route::get('login', [ 'as' => 'login', 'uses' => 'Auth\LoginController@redirectToProvider']);

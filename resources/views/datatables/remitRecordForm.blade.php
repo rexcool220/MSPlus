@@ -10,7 +10,7 @@
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <input type="hidden" name="operate" id="operate">
                     <div class="form-group">
-                        <label><input type="checkbox" name="已收款" id="已收款"/>已收款</label>
+                        <input type="checkbox" name="已收款" id="已收款" checked data-toggle="toggle" data-on="已收款" data-off="未收款" data-onstyle="success" data-offstyle="danger" data-width="50%">
                     </div>
                     <div class="form-group">
                         <label for="管理員備註">管理員備註</label>

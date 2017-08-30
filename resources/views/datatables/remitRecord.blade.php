@@ -9,16 +9,16 @@
             <th>匯款編號</th>
             <th>匯款末五碼</th>
             <th>匯款日期</th>
-            <th>Memo</th>
-            <th>已收款</th>
             <th>匯款金額</th>
             <th>FB帳號</th>
             <th>應匯款金額</th>
             <th>已出貨</th>
-            <th>管理員備註</th>
             <th>FBID</th>
             <th>PaidRebate</th>
             <th>運費</th>
+            <th>Memo</th>
+            <th>管理員備註</th>
+            <th>已收款</th>
             <th>修改</th>
             <th>刪除</th>
         </tr>
@@ -43,16 +43,16 @@
                 {data: '匯款編號', name: '匯款編號'},
                 {data: '匯款末五碼', name: '匯款末五碼'},
                 {data: '匯款日期', name: '匯款日期'},
-                {data: 'Memo', name: 'Memo'},
-                {data: '已收款', name: '已收款'},
                 {data: '匯款金額', name: '匯款金額'},
                 {data: 'FB帳號', name: 'FB帳號'},
                 {data: '應匯款金額', name: '應匯款金額'},
                 {data: '已出貨', name: '已出貨'},
-                {data: '管理員備註', name: '管理員備註'},
                 {data: 'FBID', name: 'FBID'},
                 {data: 'PaidRebate', name: 'PaidRebate'},
                 {data: '運費', name: '運費'},
+                {data: 'Memo', name: 'Memo'},
+                {data: '管理員備註', name: '管理員備註'},
+                {data: '已收款', name: '已收款'},
                 {data: 'edit', name: 'edit'},
                 {data: 'delete', name: 'delete'}
             ]

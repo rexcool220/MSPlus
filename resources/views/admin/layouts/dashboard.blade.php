@@ -11,7 +11,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ url ('/admin') }}">{{ config('app.name', 'Laravel') }}</a>
+                <a class="navbar-brand" href="{{ url ('/dashboard') }}">{{ 'Mommy\'s Secret' }}</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -48,7 +48,7 @@
                             <!-- /input-group -->
                         </li>
                         <li {{ (Request::is('/') ? 'class="active"' : '') }}>
-                            <a href="{{ url ('admin') }}"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="{{ url ('dashboard') }}"><i class="fa fa-dashboard fa-fw"></i> 數據報表</a>
                         </li>
                         <li {{ (Request::is('*charts') ? 'class="active"' : '') }}>
                             <a href="{{ url ('shippingRecord') }}"><i class="fa fa-shopping-cart fa-fw"></i> 訂單管理</a>

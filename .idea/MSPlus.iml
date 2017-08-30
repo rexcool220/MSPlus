@@ -3,17 +3,29 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/defuse/php-encryption" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/dnoegel/php-xdg-base-dir" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/inflector" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/erusev/parsedown" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/facebook/graph-sdk" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/firebase/php-jwt" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/fzaninotto/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/psr7" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/hamcrest/hamcrest-php" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/jakub-onderka/php-console-color" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/jakub-onderka/php-console-highlighter" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/laravel/framework" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/laravel/passport" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/laravel/socialite" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/laravel/tinker" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/lcobucci/jwt" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/league/event" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/league/flysystem" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/league/oauth1-client" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/league/oauth2-server" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/mockery/mockery" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/monolog/monolog" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/mtdowling/cron-expression" />
@@ -24,6 +36,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpdocumentor/reflection-common" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpdocumentor/reflection-docblock" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpdocumentor/type-resolver" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phpseclib/phpseclib" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpspec/prophecy" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpunit/php-code-coverage" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpunit/php-file-iterator" />
@@ -32,6 +45,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpunit/php-token-stream" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpunit/phpunit" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpunit/phpunit-mock-objects" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/psr/http-message" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/psr/log" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/psy/psysh" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/ramsey/uuid" />
@@ -55,6 +69,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/http-kernel" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-mbstring" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/process" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/psr-http-message-bridge" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/routing" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/translation" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/var-dumper" />
@@ -63,6 +78,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/vlucas/phpdotenv" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/webmozart/assert" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/yajra/laravel-datatables-oracle" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-diactoros" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -80,17 +96,28 @@
       <library name="PHP" type="php">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/composer" />
+          <root url="file://$MODULE_DIR$/vendor/defuse/php-encryption" />
           <root url="file://$MODULE_DIR$/vendor/dnoegel/php-xdg-base-dir" />
           <root url="file://$MODULE_DIR$/vendor/doctrine/inflector" />
           <root url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
           <root url="file://$MODULE_DIR$/vendor/erusev/parsedown" />
+          <root url="file://$MODULE_DIR$/vendor/firebase/php-jwt" />
           <root url="file://$MODULE_DIR$/vendor/fzaninotto/faker" />
+          <root url="file://$MODULE_DIR$/vendor/guzzlehttp/guzzle" />
+          <root url="file://$MODULE_DIR$/vendor/guzzlehttp/promises" />
+          <root url="file://$MODULE_DIR$/vendor/guzzlehttp/psr7" />
           <root url="file://$MODULE_DIR$/vendor/hamcrest/hamcrest-php" />
           <root url="file://$MODULE_DIR$/vendor/jakub-onderka/php-console-color" />
           <root url="file://$MODULE_DIR$/vendor/jakub-onderka/php-console-highlighter" />
           <root url="file://$MODULE_DIR$/vendor/laravel/framework" />
+          <root url="file://$MODULE_DIR$/vendor/laravel/passport" />
+          <root url="file://$MODULE_DIR$/vendor/laravel/socialite" />
           <root url="file://$MODULE_DIR$/vendor/laravel/tinker" />
+          <root url="file://$MODULE_DIR$/vendor/lcobucci/jwt" />
+          <root url="file://$MODULE_DIR$/vendor/league/event" />
           <root url="file://$MODULE_DIR$/vendor/league/flysystem" />
+          <root url="file://$MODULE_DIR$/vendor/league/oauth1-client" />
+          <root url="file://$MODULE_DIR$/vendor/league/oauth2-server" />
           <root url="file://$MODULE_DIR$/vendor/mockery/mockery" />
           <root url="file://$MODULE_DIR$/vendor/monolog/monolog" />
           <root url="file://$MODULE_DIR$/vendor/mtdowling/cron-expression" />
@@ -101,6 +128,7 @@
           <root url="file://$MODULE_DIR$/vendor/phpdocumentor/reflection-common" />
           <root url="file://$MODULE_DIR$/vendor/phpdocumentor/reflection-docblock" />
           <root url="file://$MODULE_DIR$/vendor/phpdocumentor/type-resolver" />
+          <root url="file://$MODULE_DIR$/vendor/phpseclib/phpseclib" />
           <root url="file://$MODULE_DIR$/vendor/phpspec/prophecy" />
           <root url="file://$MODULE_DIR$/vendor/phpunit/php-code-coverage" />
           <root url="file://$MODULE_DIR$/vendor/phpunit/php-file-iterator" />
@@ -109,6 +137,7 @@
           <root url="file://$MODULE_DIR$/vendor/phpunit/php-token-stream" />
           <root url="file://$MODULE_DIR$/vendor/phpunit/phpunit" />
           <root url="file://$MODULE_DIR$/vendor/phpunit/phpunit-mock-objects" />
+          <root url="file://$MODULE_DIR$/vendor/psr/http-message" />
           <root url="file://$MODULE_DIR$/vendor/psr/log" />
           <root url="file://$MODULE_DIR$/vendor/psy/psysh" />
           <root url="file://$MODULE_DIR$/vendor/ramsey/uuid" />
@@ -132,6 +161,7 @@
           <root url="file://$MODULE_DIR$/vendor/symfony/http-kernel" />
           <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-mbstring" />
           <root url="file://$MODULE_DIR$/vendor/symfony/process" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/psr-http-message-bridge" />
           <root url="file://$MODULE_DIR$/vendor/symfony/routing" />
           <root url="file://$MODULE_DIR$/vendor/symfony/translation" />
           <root url="file://$MODULE_DIR$/vendor/symfony/var-dumper" />
@@ -140,20 +170,32 @@
           <root url="file://$MODULE_DIR$/vendor/vlucas/phpdotenv" />
           <root url="file://$MODULE_DIR$/vendor/webmozart/assert" />
           <root url="file://$MODULE_DIR$/vendor/yajra/laravel-datatables-oracle" />
+          <root url="file://$MODULE_DIR$/vendor/zendframework/zend-diactoros" />
         </CLASSES>
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/composer" />
+          <root url="file://$MODULE_DIR$/vendor/defuse/php-encryption" />
           <root url="file://$MODULE_DIR$/vendor/dnoegel/php-xdg-base-dir" />
           <root url="file://$MODULE_DIR$/vendor/doctrine/inflector" />
           <root url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
           <root url="file://$MODULE_DIR$/vendor/erusev/parsedown" />
+          <root url="file://$MODULE_DIR$/vendor/firebase/php-jwt" />
           <root url="file://$MODULE_DIR$/vendor/fzaninotto/faker" />
+          <root url="file://$MODULE_DIR$/vendor/guzzlehttp/guzzle" />
+          <root url="file://$MODULE_DIR$/vendor/guzzlehttp/promises" />
+          <root url="file://$MODULE_DIR$/vendor/guzzlehttp/psr7" />
           <root url="file://$MODULE_DIR$/vendor/hamcrest/hamcrest-php" />
           <root url="file://$MODULE_DIR$/vendor/jakub-onderka/php-console-color" />
           <root url="file://$MODULE_DIR$/vendor/jakub-onderka/php-console-highlighter" />
           <root url="file://$MODULE_DIR$/vendor/laravel/framework" />
+          <root url="file://$MODULE_DIR$/vendor/laravel/passport" />
+          <root url="file://$MODULE_DIR$/vendor/laravel/socialite" />
           <root url="file://$MODULE_DIR$/vendor/laravel/tinker" />
+          <root url="file://$MODULE_DIR$/vendor/lcobucci/jwt" />
+          <root url="file://$MODULE_DIR$/vendor/league/event" />
           <root url="file://$MODULE_DIR$/vendor/league/flysystem" />
+          <root url="file://$MODULE_DIR$/vendor/league/oauth1-client" />
+          <root url="file://$MODULE_DIR$/vendor/league/oauth2-server" />
           <root url="file://$MODULE_DIR$/vendor/mockery/mockery" />
           <root url="file://$MODULE_DIR$/vendor/monolog/monolog" />
           <root url="file://$MODULE_DIR$/vendor/mtdowling/cron-expression" />
@@ -164,6 +206,7 @@
           <root url="file://$MODULE_DIR$/vendor/phpdocumentor/reflection-common" />
           <root url="file://$MODULE_DIR$/vendor/phpdocumentor/reflection-docblock" />
           <root url="file://$MODULE_DIR$/vendor/phpdocumentor/type-resolver" />
+          <root url="file://$MODULE_DIR$/vendor/phpseclib/phpseclib" />
           <root url="file://$MODULE_DIR$/vendor/phpspec/prophecy" />
           <root url="file://$MODULE_DIR$/vendor/phpunit/php-code-coverage" />
           <root url="file://$MODULE_DIR$/vendor/phpunit/php-file-iterator" />
@@ -172,6 +215,7 @@
           <root url="file://$MODULE_DIR$/vendor/phpunit/php-token-stream" />
           <root url="file://$MODULE_DIR$/vendor/phpunit/phpunit" />
           <root url="file://$MODULE_DIR$/vendor/phpunit/phpunit-mock-objects" />
+          <root url="file://$MODULE_DIR$/vendor/psr/http-message" />
           <root url="file://$MODULE_DIR$/vendor/psr/log" />
           <root url="file://$MODULE_DIR$/vendor/psy/psysh" />
           <root url="file://$MODULE_DIR$/vendor/ramsey/uuid" />
@@ -195,6 +239,7 @@
           <root url="file://$MODULE_DIR$/vendor/symfony/http-kernel" />
           <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-mbstring" />
           <root url="file://$MODULE_DIR$/vendor/symfony/process" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/psr-http-message-bridge" />
           <root url="file://$MODULE_DIR$/vendor/symfony/routing" />
           <root url="file://$MODULE_DIR$/vendor/symfony/translation" />
           <root url="file://$MODULE_DIR$/vendor/symfony/var-dumper" />
@@ -203,6 +248,7 @@
           <root url="file://$MODULE_DIR$/vendor/vlucas/phpdotenv" />
           <root url="file://$MODULE_DIR$/vendor/webmozart/assert" />
           <root url="file://$MODULE_DIR$/vendor/yajra/laravel-datatables-oracle" />
+          <root url="file://$MODULE_DIR$/vendor/zendframework/zend-diactoros" />
         </SOURCES>
       </library>
     </orderEntry>
