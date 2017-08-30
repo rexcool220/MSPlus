@@ -1,218 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="163c8b82-9ebf-4694-9085-f899f565c5e0" name="Default" comment="completed remitRecord new/edit/delete function">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/LogoutController.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/views/admin/auth/login.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/views/admin/home.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/doctrine/inflector/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/doctrine/inflector/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/doctrine/inflector/phpunit.xml.dist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/doctrine/inflector/tests/Doctrine/Tests/Common/Inflector/InflectorTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/doctrine/inflector/tests/Doctrine/Tests/DoctrineTestCase.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/doctrine/inflector/tests/Doctrine/Tests/TestInit.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/admin/charts.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/MSPlus.iml" afterPath="$PROJECT_DIR$/.idea/MSPlus.iml" />
+    <list default="true" id="163c8b82-9ebf-4694-9085-f899f565c5e0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/ChartsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ChartsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Kernel.php" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/User.php" afterPath="$PROJECT_DIR$/app/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/services.php" afterPath="$PROJECT_DIR$/config/services.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/layouts/app.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/app.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/layouts/dashboard.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/dashboard.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/datatables/remitRecord.blade.php" afterPath="$PROJECT_DIR$/resources/views/datatables/remitRecord.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/datatables/remitRecordForm.blade.php" afterPath="$PROJECT_DIR$/resources/views/datatables/remitRecordForm.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/inflector/composer.json" afterPath="$PROJECT_DIR$/vendor/doctrine/inflector/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/inflector/lib/Doctrine/Common/Inflector/Inflector.php" afterPath="$PROJECT_DIR$/vendor/doctrine/inflector/lib/Doctrine/Common/Inflector/Inflector.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/.travis.yml" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/CHANGELOG.md" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/Makefile" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/composer.json" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/readme.md" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Calculator/Iban.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Calculator/Iban.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Calculator/Luhn.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Calculator/Luhn.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/DefaultGenerator.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/DefaultGenerator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Factory.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Generator.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Generator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/ORM/Doctrine/EntityPopulator.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/ORM/Doctrine/EntityPopulator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/Barcode.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/Barcode.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/Base.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/Base.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/Biased.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/Biased.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/DateTime.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/DateTime.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/Image.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/Image.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/Internet.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/Internet.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/Lorem.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/Lorem.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/Miscellaneous.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/Miscellaneous.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/Payment.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/Payment.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/PhoneNumber.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/PhoneNumber.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/Text.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/Text.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/UserAgent.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/UserAgent.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/ar_SA/Company.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/ar_SA/Company.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/ar_SA/Person.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/ar_SA/Person.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/at_AT/Payment.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/at_AT/Payment.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/cs_CZ/PhoneNumber.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/cs_CZ/PhoneNumber.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/de_AT/Address.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/de_AT/Address.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/de_CH/Address.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/de_CH/Address.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/de_DE/Address.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/de_DE/Address.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/de_DE/Payment.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/de_DE/Payment.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/de_DE/Person.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/de_DE/Person.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/en_GB/Address.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/en_GB/Address.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/en_IN/Address.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/en_IN/Address.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/en_PH/PhoneNumber.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/en_PH/PhoneNumber.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/en_SG/PhoneNumber.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/en_SG/PhoneNumber.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/en_US/Address.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/en_US/Address.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/en_US/Company.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/en_US/Company.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/en_US/Person.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/en_US/Person.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/en_ZA/Person.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/en_ZA/Person.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/es_ES/Address.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/es_ES/Address.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/es_ES/Payment.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/es_ES/Payment.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/es_ES/Person.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/es_ES/Person.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/es_PE/Person.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/es_PE/Person.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/es_VE/Person.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/es_VE/Person.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/fa_IR/PhoneNumber.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/fa_IR/PhoneNumber.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/fi_FI/Person.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/fi_FI/Person.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/fi_FI/PhoneNumber.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/fi_FI/PhoneNumber.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/fr_BE/Company.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/fr_BE/Company.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/fr_CH/Company.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/fr_CH/Company.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/fr_FR/Company.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/fr_FR/Company.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/fr_FR/Payment.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/fr_FR/Payment.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/fr_FR/Person.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/fr_FR/Person.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/fr_FR/PhoneNumber.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/fr_FR/PhoneNumber.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/id_ID/Person.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/id_ID/Person.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/is_IS/Person.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/is_IS/Person.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/ja_JP/Internet.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/ja_JP/Internet.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/ja_JP/Person.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/ja_JP/Person.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/ja_JP/PhoneNumber.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/ja_JP/PhoneNumber.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/ja_JP/Text.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/ja_JP/Text.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/ka_GE/Address.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/ka_GE/Address.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/ka_GE/Internet.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/ka_GE/Internet.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/ka_GE/Person.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/ka_GE/Person.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/ka_GE/Text.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/ka_GE/Text.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/kk_KZ/Company.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/kk_KZ/Company.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/kk_KZ/Person.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/kk_KZ/Person.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/ko_KR/Address.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/ko_KR/Address.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/ko_KR/Person.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/ko_KR/Person.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/lv_LV/Address.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/lv_LV/Address.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/ne_NP/Address.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/ne_NP/Address.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/nl_BE/Address.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/nl_BE/Address.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/nl_NL/Address.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/nl_NL/Address.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/nl_NL/Person.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/nl_NL/Person.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/pl_PL/Address.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/pl_PL/Address.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/pl_PL/Text.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/pl_PL/Text.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/pt_BR/Company.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/pt_BR/Company.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/pt_BR/PhoneNumber.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/pt_BR/PhoneNumber.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/pt_PT/Address.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/pt_PT/Address.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/ro_RO/Person.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/ro_RO/Person.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/ru_RU/Company.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/ru_RU/Company.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/ru_RU/Person.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/ru_RU/Person.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/sr_RS/Person.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/sr_RS/Person.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/sv_SE/Company.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/sv_SE/Company.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/uk_UA/Address.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/uk_UA/Address.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/uk_UA/Company.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/uk_UA/Company.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/uk_UA/Person.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/uk_UA/Person.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/uk_UA/PhoneNumber.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/uk_UA/PhoneNumber.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/vi_VN/Address.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/vi_VN/Address.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/zh_CN/PhoneNumber.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/zh_CN/PhoneNumber.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/zh_TW/Company.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/zh_TW/Company.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/zh_TW/Person.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/zh_TW/Person.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/UniqueGenerator.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/UniqueGenerator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/ValidGenerator.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/ValidGenerator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Calculator/LuhnTest.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Calculator/LuhnTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/BaseTest.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/BaseTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/DateTimeTest.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/DateTimeTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/ImageTest.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/ImageTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/InternetTest.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/InternetTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/MiscellaneousTest.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/MiscellaneousTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/PaymentTest.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/PaymentTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/ProviderOverrideTest.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/ProviderOverrideTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/UuidTest.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/UuidTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/cs_CZ/PersonTest.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/cs_CZ/PersonTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/en_SG/PhoneNumberTest.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/en_SG/PhoneNumberTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/ja_JP/PersonTest.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/ja_JP/PersonTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/pt_PT/AddressTest.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/pt_PT/AddressTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/ro_RO/PersonTest.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/ro_RO/PersonTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/ro_RO/PhoneNumberTest.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/ro_RO/PhoneNumberTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/zh_TW/TextTest.php" afterPath="$PROJECT_DIR$/vendor/fzaninotto/faker/test/Faker/Provider/zh_TW/TextTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Console/stubs/make/views/auth/login.stub" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Console/stubs/make/views/auth/login.stub" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Console/stubs/make/views/auth/passwords/email.stub" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Console/stubs/make/views/auth/passwords/email.stub" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Console/stubs/make/views/auth/passwords/reset.stub" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Console/stubs/make/views/auth/passwords/reset.stub" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Console/stubs/make/views/auth/register.stub" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Console/stubs/make/views/auth/register.stub" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Console/stubs/make/views/home.stub" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Console/stubs/make/views/home.stub" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/RateLimiter.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cache/RateLimiter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Queue/Job.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Queue/Job.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Concerns/BuildsQueries.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Concerns/BuildsQueries.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/HasAttributes.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/HasAttributes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/QueriesRelationships.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/FactoryBuilder.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/FactoryBuilder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/SQLiteGrammar.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/SQLiteGrammar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Application.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Application.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/PolicyMakeCommand.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/PolicyMakeCommand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/UploadedFile.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/UploadedFile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Worker.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/Worker.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/MiddlewareNameResolver.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/MiddlewareNameResolver.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Router.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Router.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/SortedMiddleware.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/SortedMiddleware.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Arr.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Arr.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Collection.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Collection.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Str.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Str.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/helpers.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/helpers.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Validation/Concerns/ValidatesAttributes.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Validation/Concerns/ValidatesAttributes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/Compilers/Concerns/CompilesEchos.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/Compilers/Concerns/CompilesEchos.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/Engines/EngineResolver.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/Engines/EngineResolver.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-token-stream/.travis.yml" afterPath="$PROJECT_DIR$/vendor/phpunit/php-token-stream/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-token-stream/src/Token.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-token-stream/src/Token.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-token-stream/tests/Token/ClassTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-token-stream/tests/Token/ClassTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Application.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Application.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Tests/ApplicationTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Tests/ApplicationTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/composer.json" afterPath="$PROJECT_DIR$/vendor/symfony/console/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/css-selector/composer.json" afterPath="$PROJECT_DIR$/vendor/symfony/css-selector/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/debug/DebugClassLoader.php" afterPath="$PROJECT_DIR$/vendor/symfony/debug/DebugClassLoader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/debug/ExceptionHandler.php" afterPath="$PROJECT_DIR$/vendor/symfony/debug/ExceptionHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/debug/Tests/DebugClassLoaderTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/debug/Tests/DebugClassLoaderTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/debug/composer.json" afterPath="$PROJECT_DIR$/vendor/symfony/debug/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/event-dispatcher/composer.json" afterPath="$PROJECT_DIR$/vendor/symfony/event-dispatcher/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/finder/composer.json" afterPath="$PROJECT_DIR$/vendor/symfony/finder/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/BinaryFileResponse.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/BinaryFileResponse.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/MemcacheSessionHandler.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/MemcacheSessionHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/MemcachedSessionHandler.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/MemcachedSessionHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/BinaryFileResponseTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Tests/BinaryFileResponseTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/composer.json" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/EventListener/ProfilerListener.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/EventListener/ProfilerListener.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/Kernel.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/Kernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/Profiler/FileProfilerStorage.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/Profiler/FileProfilerStorage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/Tests/KernelTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/Tests/KernelTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/composer.json" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/composer.json" afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/process/composer.json" afterPath="$PROJECT_DIR$/vendor/symfony/process/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/routing/composer.json" afterPath="$PROJECT_DIR$/vendor/symfony/routing/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/translation/composer.json" afterPath="$PROJECT_DIR$/vendor/symfony/translation/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/LinkStub.php" afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/LinkStub.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/var-dumper/Dumper/AbstractDumper.php" afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Dumper/AbstractDumper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/var-dumper/Dumper/HtmlDumper.php" afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Dumper/HtmlDumper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/var-dumper/Tests/Caster/RedisCasterTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Tests/Caster/RedisCasterTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/var-dumper/composer.json" afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/yaml/composer.json" afterPath="$PROJECT_DIR$/vendor/symfony/yaml/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/yajra/laravel-datatables-oracle/CHANGELOG.md" afterPath="$PROJECT_DIR$/vendor/yajra/laravel-datatables-oracle/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/yajra/laravel-datatables-oracle/src/Engines/QueryBuilderEngine.php" afterPath="$PROJECT_DIR$/vendor/yajra/laravel-datatables-oracle/src/Engines/QueryBuilderEngine.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -313,8 +103,8 @@
       <file leaf-file-name="dashboard.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/dashboard.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="50" column="104" lean-forward="false" selection-start-line="50" selection-start-column="104" selection-end-line="50" selection-end-column="104" />
+            <state relative-caret-position="180">
+              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -939,7 +729,7 @@
       <workItem from="1504000904335" duration="17533000" />
       <workItem from="1504075760541" duration="1972000" />
       <workItem from="1504078362677" duration="3004000" />
-      <workItem from="1504081402957" duration="5345000" />
+      <workItem from="1504081402957" duration="5557000" />
     </task>
     <task id="LOCAL-00001" summary="Add edit/remove icon for shippingRecord">
       <created>1502125470081</created>
@@ -1004,15 +794,21 @@
       <option name="project" value="LOCAL" />
       <updated>1504075293373</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="completed logout function">
+      <created>1504087106620</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1504087106620</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="314789000" />
+    <option name="totallyTimeSpent" value="315001000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1054,7 +850,8 @@
     <MESSAGE value="completed Members new/edit/delete function" />
     <MESSAGE value="completed remitRecord new/edit/delete function" />
     <MESSAGE value="Add facebook login function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add facebook login function" />
+    <MESSAGE value="completed logout function" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed logout function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1474,8 +1271,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/dashboard.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="50" column="104" lean-forward="false" selection-start-line="50" selection-start-column="104" selection-end-line="50" selection-end-column="104" />
+        <state relative-caret-position="180">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding />
         </state>
       </provider>
