@@ -67,7 +67,7 @@ Route::get('/collapse', function() {
     return View::make('admin.collapse');
 });
 
-Route::group(['middleware' => 'auth'], function () {
+Route::group(['middleware' => ['auth', 'admin']], function () {
     Route::get('/shippingRecord', 'DatatablesController@getShippingRecord');
 
     Route::get('/shippingRecordData', 'DatatablesController@shippingRecordData')->name('datatables.shippingRecord');

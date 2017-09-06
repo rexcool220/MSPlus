@@ -64,14 +64,16 @@ class LoginController extends Controller
 
         $result = Members::WHERE('FBID', $fbID)->first();
 
-        if(($result != null) && ($result->Type == '管理員')){
-            $user = User::firstOrNew(array('name' => $user->getId(), 'email' => $user->getEmail()));
-            $user->save();
-            Auth::login($user, false);
+        $user = User::firstOrNew(array('name' => $user->getId(), 'email' => $user->getEmail()));
+        $user->save();
+        Auth::login($user, false);
+
+        if(($result != null) && (($result->Type == '管理員') || ($result->Type == '共用帳號'))){
+
             return redirect()->intended('defaultpage');
         }
         else{
-            return "你不是管理員";
+            return redirect('/home');
         }
     }
 }
