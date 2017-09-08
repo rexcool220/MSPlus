@@ -179,9 +179,8 @@ class AjaxController extends Controller
         $wholeSalePrice = request('批發價');
         $vendor = request('廠商');
         $arriveDate = request('到貨日期');
-        $updateTime = request('更新時間');
         $photo = request('Photo');
-        $active = request('Active') == true ? 1 : 0;
+        $active = request('Active') == '是' ? 1 : 0;
 
         if($operate == 'new')
         {
@@ -198,7 +197,7 @@ class AjaxController extends Controller
                 '批發價' => $wholeSalePrice,
                 '廠商' => $vendor,
                 '到貨日期' => $arriveDate,
-                '更新時間' => $updateTime,
+                '更新時間' => \Carbon\Carbon::now(),
                 'Photo' => $photo,
                 'Active' => $active,
             ]);
@@ -219,7 +218,7 @@ class AjaxController extends Controller
                 '批發價' => $wholeSalePrice,
                 '廠商' => $vendor,
                 '到貨日期' => $arriveDate,
-                '更新時間' => $updateTime,
+                '更新時間' => \Carbon\Carbon::now(),
                 'Photo' => $photo,
                 'Active' => $active,
             ]);
@@ -251,11 +250,11 @@ class AjaxController extends Controller
         $lastFiveCode = request('匯款末五碼');
         $remitDate = request('匯款日期');
         $memo = request('Memo');
-        $isRemited = request('已收款') == true ? 1 : 0;
+        $isRemited = request('已收款') == '已收款' ? 1 : 0;
         $remitedAmount = request('匯款金額');
         $fbAccount = request('FB帳號');
         $remitAmount = request('應匯款金額');
-        $isShipping = request('已出貨') == true ? 1 : 0;
+        $isShipping = request('已出貨') == '已出貨' ? 1 : 0;
         $adminMemo = request('管理員備註');
         $fbID = request('FBID');
         $paidRebate = request('PaidRebate');

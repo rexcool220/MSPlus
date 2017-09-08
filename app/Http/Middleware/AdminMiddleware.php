@@ -21,6 +21,8 @@ class AdminMiddleware
 
         $result = Members::WHERE('FBID', $fbID)->first();
 
+        $request->request->add(['permission', $result->Type]);
+
         if(($result != null) && (($result->Type == '管理員') || ($result->Type == '共用帳號'))){
 
             return $next($request);

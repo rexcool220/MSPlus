@@ -64,11 +64,11 @@
             $('#匯款末五碼').val(remitRecordJson.匯款末五碼);
             $('#匯款日期').val(remitRecordJson.匯款日期);
             $('#Memo').val(remitRecordJson.Memo);
-            $('#已收款').prop('checked', remitRecordJson.已收款);
+            $('#已收款').val(remitRecordJson.已收款 == 1 ? '已收款' : '未收款');
             $('#匯款金額').val(remitRecordJson.匯款金額);
             $('#FB帳號').val(remitRecordJson.FB帳號);
             $('#應匯款金額').val(remitRecordJson.應匯款金額);
-            $('#已出貨').prop('checked', remitRecordJson.已出貨);
+            $('#已出貨').val(remitRecordJson.已出貨 == 1 ? '已出貨' : '未出貨');
             $('#管理員備註').val(remitRecordJson.管理員備註);
             $('#FBID').val(remitRecordJson.FBID);
             $('#PaidRebate').val(remitRecordJson.PaidRebate);
@@ -118,6 +118,22 @@
                 }
             }
         })
+    });
+    $('#已收款').click(function () {
+        if($('#已收款').val() == '已收款'){
+            $('#已收款').val('未收款');
+        }
+        else{
+            $('#已收款').val('已收款');
+        }
+    });
+    $('#已出貨').click(function () {
+        if($('#已出貨').val() == '已出貨'){
+            $('#已出貨').val('未出貨');
+        }
+        else{
+            $('#已出貨').val('已出貨');
+        }
     });
 </script>
 @endpush

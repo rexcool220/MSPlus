@@ -9,6 +9,13 @@
                 <form id="itemCategoryForm" role="form" >
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <input type="hidden" name="operate" id="operate">
+                    <div class="row">
+                        <div class="col-md-2 col-md-offset-10"><button type="button" value="editItemCategory" id="submit" class="btn btn-primary">確定</button></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Active">Active</label>
+                        <input type="text" name="Active" id="Active" class="form-control" readonly/>
+                    </div>
                     <div class="form-group">
                         <label for="ItemID">ItemID</label>
                         <input type="text" name="ItemID" id="ItemID" class="form-control"/>
@@ -64,12 +71,6 @@
                     <div class="form-group">
                         <label for="Photo">Photo</label>
                         <input type="text" name="Photo" id="Photo" class="form-control"/>
-                    </div>
-                    <div class="form-group">
-                        <label><input type="checkbox" name="Active" id="Active"/>Active</label>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2 col-md-offset-10"><button type="button" value="editItemCategory" id="submit" class="btn btn-primary">確定</button></div>
                     </div>
                 </form>
             </div>

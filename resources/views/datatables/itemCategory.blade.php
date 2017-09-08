@@ -79,7 +79,7 @@
             $('#到貨日期').val(itemCategoryJson.到貨日期);
             $('#更新時間').val(itemCategoryJson.更新時間);
             $('#Photo').val(itemCategoryJson.Photo);
-            $('#Active').prop('checked', itemCategoryJson.Active);
+            $('#Active').val(itemCategoryJson.Active == 1 ? '是' : '否');
             $('#itemCategoryModal').modal('show');
         });
         $('#itemCategoryTable').DataTable().on('click', '.btn-delete[data-remote]', function (e) {
@@ -97,6 +97,7 @@
                 });
             }
         });
+        $('')
     });
     $('#submit').click(function () {
         var form = $("#itemCategoryForm");
@@ -131,6 +132,14 @@
         $('#operate').val('new');
         $('#itemCategoryForm').trigger("reset");
         $('#itemCategoryModal').modal('show');
+    });
+    $('#Active').click(function () {
+        if($('#Active').val() == '是'){
+            $('#Active').val('否');
+        }
+        else{
+            $('#Active').val('是');
+        }
     });
 
 </script>

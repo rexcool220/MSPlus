@@ -112,7 +112,7 @@
                 } else if (x.status == 404) {
                     alert('Requested URL not found.');
                 } else if (x.status == 500) {
-                    alert('Internel Server Error.');
+                    alert(e.message);
                 } else if (e == 'parsererror') {
                     alert('Error.\nParsing JSON Request failed.');
                 } else if (e == 'timeout') {
